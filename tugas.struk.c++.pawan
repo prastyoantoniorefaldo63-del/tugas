@@ -4,7 +4,7 @@ int main() {
     string teks, nama[1];
     int total, tekan, porsi[1];
     int i;
-    float r;
+   
 
     for(i=0;i<1;i++){
         cout<<"masukkan nama ";
@@ -16,29 +16,32 @@ int main() {
             cout<<"silakan masukkan ingin memesan beapa porsi ";
             cin>>porsi[i];
             total=10000*porsi[i];
-            cout<<total<<endl;
             }else if(tekan==2){
             cout<<"oke kamu memilih nasi goreng dengan harga 12000 ";
             cout<<"silakan masukkan ingin memesan beapa porsi ";
             cin>>porsi[i];
             total=12000*porsi[i];
-            cout<<total<<endl;
             }
         }
 
     for(i=0;i<1;i++){
-        cout<<"______________________"<<endl;
+        cout<<"____________________"<<endl;
         cout<<"namanya adalah"<<endl;
         cout<<nama[i]<<endl;
         cout<<"memesan: ";
         if(tekan==1){
             cout<<"bakmi "<<endl;
+            cout<<"total pesanan: ";
+            cout<<porsi[i]<<endl;
             cout<<"harga: ";
             cout<<total;
         }else if(tekan==2){
             cout<<"nasi goreng "<<endl;
+            cout<<"total pesanan: ";
+            cout<<porsi[i]<<endl;
             cout<<"harga: ";
-            cout<<total;
+            cout<<total<<endl;
+            cout<<"________________________";
         }
         
         
