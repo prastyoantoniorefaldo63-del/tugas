@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+string nama;
+string kelas;
+void sapa(){
+    cout<<"nama mu adalah ";
+    cin>>nama;
+}
+
+void sekolah(){
+    cout<<"masukkan kelas ";
+    cin>>kelas;
+}
+
+void perkenalan(){
+    cout<<"nama mu adalah ";
+    cout<<nama;
+}
+
+void terakhi(){
+    cout<<" kamu berada di kelas ";
+    cout<<kelas;
+}
+int main() 
+{
+    sapa();
+    sekolah();
+    perkenalan();
+    terakhi();
+
+    return 0;
+}
